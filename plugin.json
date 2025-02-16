@@ -15,11 +15,6 @@
                 "graphCode": {
                     "type": "string",
                     "description": "The javascript code to render the mind map. This code must include: 1) the mind map data in JSON format, adhering to one of the jsMind library's supported data formats (e.g., 'node_tree', 'node_array'). Refer to the jsMind documentation for details on each format. 2) the jsMind options in JSON format, including at least the 'container' option set to 'jsmind_container'. Other options can be used to customize the mind map's appearance and behavior (e.g., 'editable', 'theme', 'layout'). 3) the instantiation of the jsMind object using the data and options: `var jm = new jsMind(options);`. 4) the rendering of the mind map to the div with id 'jsmind_container': `jm.show(mind);`. The entire code should be valid JavaScript. Do not include the jsMind CDN links in the generated code, as they are already included by the plugin. The code should define a variable named 'mind' containing the mind map data and a variable named 'options' containing the jsMind options."
-                },
-                "canvasHeight": {
-                    "type": "number",
-                    "default": 500,
-                    "description": "The height of the canvas in pixels. Default is 500."
                 }
             }
         },
